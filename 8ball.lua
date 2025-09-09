@@ -123,7 +123,7 @@ task.spawn(function()
             if table.find(targets, obj.Name) and obj:IsA("BasePart") then
                 local distance = (humanoidRootPart.Position - obj.Position).Magnitude
                 if distance <= farmDistance then
-                    humanoidRootPart.CFrame = obj.CFrame + Vector3.new(0, 1, 0)
+                    humanoidRootPart.CFrame = obj.CFrame + Vector3.new(0, -4, 0)
                     task.wait(0.2)
                     local clickDetector = obj:FindFirstChildOfClass("ClickDetector")
                     if clickDetector then
